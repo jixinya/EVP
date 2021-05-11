@@ -4,7 +4,7 @@ Xinya Ji, [Zhou Hang](https://hangz-nju-cuhk.github.io/), Kaisiyuan Wang, [Wayne
 
 [[Project]](https://jixinya.github.io/projects/evp/)    [[Paper]](https://arxiv.org/abs/2104.07452)    
 
-![](F:\EVP-main\demo\Fig1.png)
+![](demo\Fig1.png)
 
 Given an audio clip and a target video, our Emotional Video Portraits (EVP) approach is capable of generating emotion-controllable talking portraits and change the emotion of them smoothly by interpolating at the latent space.
 
