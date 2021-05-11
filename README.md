@@ -1,6 +1,6 @@
 # Audio-Driven Emotional Video Portraits [CVPR2021]
 
-Xinya Ji, [Zhou Hang](https://hangz-nju-cuhk.github.io/), Kaisiyuan Wang, [Wayne Wu](http://wywu.github.io/), [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/), [Xun Cao]([Xun Cao, Professor](https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html)), [Feng Xu](http://xufeng.site/)
+Xinya Ji, [Zhou Hang](https://hangz-nju-cuhk.github.io/), Kaisiyuan Wang, [Wayne Wu](http://wywu.github.io/), [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/), [Xun Cao](https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html), [Feng Xu](http://xufeng.site/)
 
 [[Project]](https://jixinya.github.io/projects/evp/)    [[Paper]](https://arxiv.org/abs/2104.07452)    
 
