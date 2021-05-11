@@ -1,0 +1,5 @@
+at_model: pth/M030_20.pth
+sample_dir: result/M030.npy
+video_dir: result/M030.mp4
+pca: basics/M030_U_106.npy
+mean: basics/M030_mean_106.npy

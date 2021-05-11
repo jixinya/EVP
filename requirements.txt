@@ -1,0 +1,13 @@
+torch==1.2.0
+torchvision
+numpy
+librosa
+opencv-python
+python_speech_features
+pickle
+matplotlib
+scikit-image
+Pillow
+tqdm
+dlib
+scipy
