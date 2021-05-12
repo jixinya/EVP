@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 ## Testing
 
-- Download the pre-trained models and data under the following link: (we release results of two target person: M003 and M030), unzip the `test.zip` and put the file in corresponding places.
+- Download the pre-trained models and data under the following link: [google-drive](https://drive.google.com/file/d/1QQeE8ahQC_ErPBzTc6Kx5pzOAWcRoNs4/view?usp=sharing) (we release results of two target person: M003 and M030), unzip the `test.zip` and put the file in corresponding places.
 
 - Step1 : audio2landmark
   
