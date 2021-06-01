@@ -1,5 +1,5 @@
 at_model: pth/M003_20.pth
 sample_dir: result/M003.npy
-video_dir: result/M003.mp4
+video_dir: result/M003.avi
 pca: basics/M003_U_106.npy
 mean: basics/M003_mean_106.npy

@@ -205,7 +205,7 @@ def test(opt, config):
             mouth_video_writer.write_frame(draw_mouth(fake_lmark[i]*255, 256, 256))
         mouth_video_writer.end()
 
-        add_audio(config['video_dir'], opt.in_file)
+        add_audio(config['video_dir'], opt.audio)
  
         print ('The generated video is: {}'.format(config['video_dir'].replace('.mp4','.mov')))
 
