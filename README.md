@@ -2,7 +2,7 @@
 
 Xinya Ji, [Hang Zhou](https://hangz-nju-cuhk.github.io/), Kaisiyuan Wang, [Wayne Wu](http://wywu.github.io/), [Chen Change Loy](http://personal.ie.cuhk.edu.hk/~ccloy/), [Xun Cao](https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html), [Feng Xu](http://xufeng.site/)
 
-[[Project]](https://jixinya.github.io/projects/evp/)    [[Paper]](https://arxiv.org/abs/2104.07452)    
+[[Project]](https://jixinya.github.io/projects/evp/)    [[Paper]](https://arxiv.org/abs/2104.07452) 
 
 ![visualization](demo/Fig1.png)
 
@@ -68,7 +68,49 @@ pip install -r requirements.txt
 
 ## Training
 
-- Coming soon.     
+- Download the pre-trained models and data under the following link: [google-drive](https://drive.google.com/file/d/1OjFo6oRu-PIlZIl-6zPfnD_x4TW1iZ-3/view?usp=sharing) (we release data of M030), unzip the `train.zip` and put the file in corresponding places.
+
+- Step1 : emotion_pretrain:
+
+ 1. Generate the trainig data(MFCC) from the raw audio:
+ 
+     ```
+     python emotion_pretrain/code/mfcc_preprocess.py
+     ```
+     
+ 2. The emotion classification for MFCC:
+   
+    ```
+     python emotion_pretrain/code/train.py
+     ```
+
+- Step2 : disentanglement
+  
+ 1. Use DTW to align the audio:
+ 
+     ```
+     python disentanglement/dtw/MFCC_dtw.py
+     ```
+     
+ 2. Cross-reconstruction for disentanglement:
+   
+    ```
+     python disentanglement/code/train_content+cla.py
+     ```
+     
+- Step3 : landmark
+
+ 1. Generate the data for training:
+ 
+     ```
+     python landmark/code/preprocess.py
+     ```
+     
+ 2. Training the Audio-to-Landmark module:
+   
+    ```
+     python landmark/code/train.py
+     ```
 
 ## Citation
 
