@@ -128,16 +128,21 @@ for i in range(8):
     con_path='train/disentanglement/emotion_length/M030/'+str(i)
     if not os.path.exists(con_path):
         os.makedirs(con_path)
-    n = 0
+
     for j in range(13):
         f=open(filepath+str(j)+'/'+str(i)+'.pkl','rb')
         mfcc=pickle.load(f)
         f.close()
-        for k in range(len(mfcc)):
-            mfcc_k = mfcc[k]
-            with open(os.path.join(con_path,str(k+n)+'.pkl'), 'wb') as f:
-                pickle.dump(mfcc_k, f)
-        n += len(mfcc)
+        time_len = mfcc.shape[0]
+        length = 0
+        for input_idx in range(int((time_len-28)/4)+1):
+
+            input_feat = mfcc[4*input_idx:4*input_idx+sample_len,:]
+
+            with open(os.path.join(con_path,str(length)+'.pkl'), 'wb') as f:
+                pickle.dump(input_feat, f)
+            length+=1
+            print(i,j,input_idx)
 
 
 
